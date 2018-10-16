@@ -1,0 +1,121 @@
+% Shorthand for \phantom to use in tables
+\newcommand{\pho}{\phantom{0}}
+\newcommand{\bslash}{\ensuremath{\backslash}}
+\newcommand{\BibTeX}{{\sc Bib\TeX}}
+\newcommand{\Nl}{\mbox{$N_{\rm{loose}}$}}
+\newcommand{\Nt}{\mbox{$N_{\rm{tight}}$}}
+\newcommand{\Ns}{\mbox{$N^{\rm{SIG}}$}}
+\newcommand{\Nf}{\mbox{$N^{\rm{FAKE}}$}}
+\newcommand{\epss}{\mbox{$\varepsilon^{\rm{SIG}}$}}
+%\newcommand{\epsf}{\mbox{$\varepsilon^{\rm{FAKE}}$}}
+\newcommand{\zmumu}{\mbox{$\rm{Z}^0 \rightarrow \mu \mu$}~}
+\newcommand{\zee}{\mbox{$\rm{Z}^0 \rightarrow e e$}~}
+\newcommand{\ZZero}{\mbox{$\rm{Z}^0$}~}
+\newcommand{\MTW}{\mbox{$M_{\rm{T}}(\rm{W})$}~}
+\newcommand{\ljets}{\ensuremath{\ell{}+\text{jets}}}
+\newcommand{\ejets}{\ensuremath{e+\text{jets}}}
+\newcommand{\mujets}{\ensuremath{\mu{}+\text{jets}}}
+\newcommand{\lumi}{\ensuremath{20.3~\ifb{}}}
+\def\etconetwenty{\ensuremath{E_{T}^{0.2}}}
+\def\etconethirty{\ensuremath{E_{T}^{0.3}}}
+\def\ptconethirty{\ensuremath{p_{T}^{0.3}}}
+\newcommand{\mymet}   {\ensuremath{E_{\mathrm{T}}^{\mathrm{miss}}}}
+\newcommand{\etmiss}{$E_{\mathrm{T}}^{\mathrm{miss}}$}
+%hypenated typewriter fonts 
+% (see 
+% http://tex.stackexchange.com/questions/44361/how-to-automatically-hyphenate-within-texttt )
+\newcommand\hyptexttt[1]{\texttt{\hyphenchar\font=45\relax #1}}
+% % Sub/superscript roman not italic (EE)
+\def\MEX{\ensuremath{E_{\mathrm{x}}^{\mathrm{miss}}}}
+\def\mex{\ensuremath{E_{\mathrm{x}}^{\mathrm{miss}}}}
+\def\MEY{\ensuremath{E_{\mathrm{y}}^{\mathrm{miss}}}}
+\def\mey{\ensuremath{E_{\mathrm{y}}^{\mathrm{miss}}}}
+\def\MEXY{\ensuremath{E_{\mathrm{x,y}}^{\mathrm{miss}}}}
+\def\mexy{\ensuremath{E_{\mathrm{x,y}}^{\mathrm{miss}}}}
+\def\MEXYTRUTH{\ensuremath{E_{\mathrm{x,y Truth}}^{\mathrm{miss}}}}
+\def\mexytruth{\ensuremath{E_{\mathrm{x,y Truth}}^{\mathrm{miss}}}}
+\def\METTRUTH{\ensuremath{E_{\mathrm{T Truth}}^{\mathrm{miss}}}}
+\def\mettruth{\ensuremath{E_{\mathrm{T Truth}}^{\mathrm{miss}}}}
+% generators and formatting
+\newcommand{\formatGenerator}[1]{\textsc{#1}}
+\newcommand{\herwig}{\formatGenerator{herwig}}
+\newcommand{\powheg}{\formatGenerator{powheg}}
+\newcommand{\mcatnlo}{\formatGenerator{mcatnlo}}
+\newcommand{\pythia}{\formatGenerator{pythia}}
+\newcommand{\pythiaSix}{\formatGenerator{pythia~6}}
+\newcommand{\alpgen}{\formatGenerator{alpgen}}
+\newcommand{\athena}{\formatGenerator{athena}}
+\newcommand{\mcnlo}{\formatGenerator{mc@nlo}}
+\newcommand{\sherpa}{\formatGenerator{sherpa}}
+\newcommand{\acermc}{\formatGenerator{acermc}}
+\newcommand{\protos}{\formatGenerator{protos}}
+\newcommand{\geantFour}{\formatGenerator{geant4}}
+\newcommand{\jimmy}{\formatGenerator{jimmy}}
+\newcommand{\hathor}{\formatGenerator{hathor}}
+\newcommand{\atlfastTwo}{\formatGenerator{atlfast2}}
+\newcommand{\wikiPage}[1]{\texttt{#1} wiki page}
+% samples
+\newcommand{\ttH}{\ensuremath{t\bar{t}H}}
+\newcommand{\wjets}{\ensuremath{W+\mathrm{jets}}}
+\newcommand{\wbb} {\ensuremath{Wb\bar{b}+{\rm jets}}}
+\newcommand{\wcc} {\ensuremath{Wc\bar{c}+{\rm jets}}}
+\newcommand{\wc} {\ensuremath{Wc+{\rm jets}}}
+\newcommand{\wlight} {\ensuremath{W+{\rm light~jets}}}
+\newcommand{\zjets}{\ensuremath{Z+\mathrm{jets}}}
+% matrix method
+\newcommand{\effFake}{\ensuremath{\epsilon_{\mathrm{fake}}}}
+\newcommand{\effReal}{\ensuremath{\epsilon_{\mathrm{real}}}}
+% Analysis variables
+\newcommand{\qg}{\ensuremath{qg}}
+\newcommand{\AC}{\ensuremath{\text{A}_{\text{C}}}}
+\newcommand{\ACsub}[1]{\ensuremath{\text{A}_{\text{C}, #1}}}
+\newcommand{\Et}{\ensuremath{E_{\text{T}}}}
+%\newcommand{\pT}{\ensuremath{p_{\text{T}}}} % already defined in atlasphysics.sty
+\newcommand{\ptSub}[1]{\ensuremath{p_{\text{T} #1}}}
+\newcommand{\ptSup}[1]{\ensuremath{p_{\text{T}}^{#1}}}
+\newcommand{\ptEl}{\ensuremath{p_{\text{T}}^{e}}}
+\newcommand{\ptMu}{\ensuremath{p_{\text{T}}^{\mu{}}}}
+%\newcommand{\met}{\ensuremath{\cancel{E}_{\text{T}}}} % already defined atlasphysics.sty
+\newcommand{\mt}{\ensuremath{M_{\text{T}}}}
+\newcommand{\mtw}{\ensuremath{M_{\text{T,W}}}}
+%\newcommand{\ttbar}{\ensuremath{t\bar{t}}} % already defined atlasphysics.sty
+\newcommand{\mtt}{\ensuremath{m_{\ttbar{}}}}
+\newcommand{\pttt}{\ensuremath{p_{\text{T},\ttbar{}}}}
+\newcommand{\ytt}{\ensuremath{y_{\ttbar{}}}}
+\newcommand{\absYtt}{\ensuremath{\abs{y_{\ttbar{}}}}}
+\newcommand{\betatt}{\ensuremath{\beta_{z,\ttbar{}}}}
+\newcommand{\pp}{\ensuremath{pp}}
+\newcommand{\ppbar}{\ensuremath{p\bar{p}}}
+\newcommand{\deltaR}[2]{\ensuremath{\Delta{}R\left(#1, #2\right)}}
+% FBU-related
+\providecommand{\abs}[1]{\lvert#1\rvert} 
+\newcommand{\dy}{\ensuremath{\Delta{}\abs{y}}}
+\newcommand{\diffVar}{\ensuremath{\varv{}}}
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+\newcommand{\thetavec}{\ensuremath{\vect{\theta{}}}}
+\newcommand{\Truth}{\ensuremath{\vect{T}}}
+\newcommand{\Data}{\ensuremath{\vect{D}}}
+\newcommand{\Bckg}{\ensuremath{\vect{B}}}
+\newcommand{\Reco}{\ensuremath{\vect{R}}}
+\newcommand{\TrasfMatrix}{\ensuremath{\mathcal{M}}}
+\newcommand{\Real}{\ensuremath{\mathbb{R}}}
+\newcommand{\Integer}{\ensuremath{\mathbb{N}}}
+\newcommand{\conditionalProb}[2]{\ensuremath{p\left(#1|#2\right)}}
+\newcommand{\conditionalLhood}[2]{\ensuremath{\mathcal{L}\left(#1|#2\right)}}
+\newcommand{\prior}{\ensuremath{\pi{}\left(\Truth{}\right)}}
+\newcommand{\Tinf}{\ensuremath{T\ulcorner{}}}
+\newcommand{\Tsup}{\ensuremath{T\urcorner{}}}
+%\DeclareMathOperator{\Erf}{Erf}
+%------------
+% other various commands
+%------------
+%
+% redefine marginpar (with tighter spacing)
+\let\oldmarginpar\marginpar
+\renewcommand\marginpar[1]{
+  \-\oldmarginpar[\raggedleft\footnotesize #1]{\raggedright\footnotesize #1}
+}
+
+%------------
+%
+%------------
